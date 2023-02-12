@@ -5,7 +5,7 @@ import androidx.multidex.MultiDexApplication
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class App : MultiDexApplication(){
+class App : MultiDexApplication() {
     companion object {
         lateinit var applicationContext: Context
 
@@ -13,8 +13,10 @@ class App : MultiDexApplication(){
             this.applicationContext = context
         }
     }
+
     override fun onCreate() {
         super.onCreate()
         setAppContext(applicationContext)
     }
 }
+

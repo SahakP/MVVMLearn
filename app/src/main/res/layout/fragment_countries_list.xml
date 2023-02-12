@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.FragmentCountriesList">
+    tools:context=".ui.fragment.FragmentCountriesList">
 
     <LinearLayout
         android:id="@+id/body"
@@ -24,7 +24,7 @@
             android:layout_margin="10dp"/>
 
         <Button
-            android:id="@+id/buttonGo"
+            android:id="@+id/updateBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"

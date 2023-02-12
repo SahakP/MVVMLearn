@@ -7,16 +7,23 @@
 
     <fragment
         android:id="@+id/fragmentCountriesList"
-        android:name="com.example.mvvmlearn.ui.FragmentCountriesList"
+        android:name="com.example.mvvmlearn.ui.fragment.FragmentCountriesList"
         android:label="fragment_countries_list"
         tools:layout="@layout/fragment_countries_list" >
         <action
             android:id="@+id/action_fragmentCountriesList_to_fragmentDetails"
             app:destination="@id/fragmentDetails" />
+        <argument
+            android:name="selectItem"
+            app:argType="com.example.mvvmlearn.data.model.CountryModel" />
     </fragment>
     <fragment
         android:id="@+id/fragmentDetails"
-        android:name="com.example.mvvmlearn.ui.FragmentDetails"
+        android:name="com.example.mvvmlearn.ui.fragment.FragmentDetails"
         android:label="fragment_details"
-        tools:layout="@layout/fragment_details" />
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="selectedCountry"
+            app:argType="com.example.mvvmlearn.data.model.CountryModel" />
+    </fragment>
 </navigation>

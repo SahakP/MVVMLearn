@@ -1,4 +1,4 @@
-package com.example.mvvmlearn.ui
+package com.example.mvvmlearn.ui.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
@@ -29,7 +29,7 @@ class CountryViewModel @Inject constructor(
         getAllCountries()
     }
 
-    private fun getAllCountries() {
+    fun getAllCountries() {
         val call = countryRepo.getAll()
 
         call.enqueue(object : Callback<ArrayList<CountryModel>> {
@@ -48,25 +48,10 @@ class CountryViewModel @Inject constructor(
                 errorMessage.value = t.message
                 countryList.clear()
                 isLoading.value = false
-                Log.e(TAG, "error", t)
+               // Log.e(TAG, "error", t)
             }
 
         })
-
-//        val response = countryRepo.getAll()
-//        response.enqueue(object : Callback<ArrayList<CountryModel>> {
-//
-//            override fun onResponse(
-//                call: Call<ArrayList<CountryModel>>,
-//                response: Response<ArrayList<CountryModel>>
-//            ) {
-//                countryList.postValue(response.body())
-//            }
-//
-//            override fun onFailure(call: Call<ArrayList<CountryModel>>, t: Throwable) {
-//                errorMessage.postValue(t.message)
-//            }
-
 
 
     }

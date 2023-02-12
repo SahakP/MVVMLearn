@@ -1,4 +1,4 @@
-package com.example.mvvmlearn.ui
+package com.example.mvvmlearn.ui.acticity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -32,17 +32,13 @@ class MainActivity : AppCompatActivity() {
  * 5. install view binding (gradle, fragment, activity)
  * 6. Navigation (activity loads firs view, on click opens second one)
  * 7. Install retrofit (for network calls)
-
  * 8. Create models (using postman to understand models structure)
-
  * 9. Create repositories
-
  * 10. Create viewModel
-
  * 11. RecyclerView (fragment 1)
-
  * 12. Compile all together (click in country opens fragment 2 with country details)
 
+ * 12.1. modeli mej avelacnel timzon u currencies
  * 13. Check internet connection before actions
  * 14. Create room DB with local countries info
  * 15. If there is no internet, just show local countries

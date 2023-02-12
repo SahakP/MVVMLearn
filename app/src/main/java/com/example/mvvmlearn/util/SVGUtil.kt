@@ -1,9 +1,6 @@
 package com.example.mvvmlearn.util
 
-
 import android.content.Context
-import android.os.Handler
-import android.os.Looper
 import android.widget.ImageView
 import com.example.mvvmlearn.R
 import com.pixplicity.sharp.Sharp
@@ -12,10 +9,6 @@ import kotlinx.coroutines.launch
 import okhttp3.*
 import java.io.IOException
 
-
-/**
- * Created by Garik on 12-Jan-23, 11:35
- */
 object SVGUtil {
     private var httpClient: OkHttpClient? = null
     

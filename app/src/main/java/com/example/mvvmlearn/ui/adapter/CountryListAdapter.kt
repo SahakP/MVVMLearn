@@ -1,8 +1,6 @@
-package com.example.mvvmlearn.ui
+package com.example.mvvmlearn.ui.adapter
 
-import android.app.Activity
 import android.content.Context
-import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,7 +13,7 @@ import com.example.mvvmlearn.data.model.CountryModel
 import com.example.mvvmlearn.util.SVGUtil
 
 
- class CountryListAdapter(context: Context, items: ArrayList<CountryModel>) :
+class CountryListAdapter(context: Context, items: ArrayList<CountryModel>) :
     RecyclerView.Adapter<CountryListAdapter.ItemViewHolder>() {
 
     private val mContext = context
